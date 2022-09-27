@@ -147,6 +147,7 @@ img {
 .contact-info .link:hover,
 .contact-info .link:focus {
   color: var(--accent-color);
+  transition: color var(--timing);
 }
 
 .mail-icon,
@@ -674,7 +675,7 @@ footer .logo-studio {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity var(--timing);
+  transition: opacity var(--timing), visibility var(--timing);
 }
 
 .backdrop.is-hidden {
