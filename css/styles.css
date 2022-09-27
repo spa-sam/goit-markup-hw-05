@@ -670,8 +670,6 @@ footer .logo-studio {
   position: fixed;
   top: 0;
   left: 0;
-  /* width: 528px;
-  height: 581px; */
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
@@ -682,6 +680,7 @@ footer .logo-studio {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 
 .modal {
@@ -698,4 +697,33 @@ footer .logo-studio {
 
   opacity: 1;
   transition: transform var(--timing), opacity var(--timing);
+}
+
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.icon-close {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 11px;
+  height: 11px;
+}
+
+.modal-close:focus .icon-close,
+.modal-close:hover .icon-close,
+.modal-close:active .icon-close {
+  fill: #2196f3;
+  transition: fill var(--timing);
 }
