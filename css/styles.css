@@ -434,15 +434,15 @@ img {
 .page-footer {
   background-color: var(--page-footer-bgcolor); /* #2e2f42 */
   margin-top: 120px;
-}
-.page-footer .container {
   display: flex;
 }
+
 .footer-container {
   display: flex;
-  /* flex-direction: column; */
   padding-top: 100px;
   padding-bottom: 100px;
+  justify-content: space-between;
+  flex-wrap: wrap; 
 }
 
 .foot-logo {
@@ -472,9 +472,10 @@ img {
 }
 
 .social-footer {
-  /* display: flex; */
-
-  padding-left: 120px;
+  padding-right: 80px;
+}
+.footer-info {
+  padding-right: 120px;
 }
 
 .social-footer-titel {
@@ -496,4 +497,58 @@ img {
 .social-list-footer .social-link:hover,
 .social-list-footer .social-link:focus {
   background-color: #31d0aa;
+}
+
+
+
+.social-footer-label {
+  display: block;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.subscribe-footer-container{
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+ }
+
+.subscribe-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  margin-top: 16px;
+  margin-right: 24px;
+}
+
+.subscribe-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  color: var(--hero-button-text-color);
+  background-color: var(--hero-button-bgcolor);
+  border-radius: 4px;
+  padding: 8px 64px 8px 24px;
+  border: none;
+  gap: 16px;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.icon-send {
+  position: absolute;
+  right: 24px;
+  fill: #fff;
 }
