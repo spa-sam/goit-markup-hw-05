@@ -54,7 +54,7 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button button" type="button">Order now</button>
+          <button class="hero-button button" type="button" data-modal-open>Order now</button>
         </div>
       </section>
       <section class="benefits section">
@@ -605,14 +605,16 @@
       </div>
     </footer>
     <!-- ===========================================BACKDROP MODAL============================================= -->
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="button button-modal-close" data-modal-close>
+        <button class="button button-modal-close" data-modal-close>
           <svg class="icon-close" width="8px" height="8px" aria-label="close model icon">
             <use href="./images/icons/sprite.svg#icon-close"></use>
           </svg>
         </button>
       </div>
     </div>
+    <!-- script -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
