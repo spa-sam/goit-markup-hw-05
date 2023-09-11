@@ -660,9 +660,9 @@ img {
 }
 
 .form-field {
-  position: relative;
-  display: flex;
-  flex-direction: column;
+  /* position: relative;
+  display: flex; 
+  flex-direction: column;*/
   max-width: 360px;
   margin-top: 0;
   margin-bottom: 8px;
@@ -671,19 +671,27 @@ img {
   line-height: 1.2;
   text-align: left;
   letter-spacing: 0.01em;
-
-  color: #757575;
 }
 
 .form-label {
+  display: block;
   margin-bottom: 4px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.48px;
   transition: color var(--timing);
+  color: #8e8f99;
 }
 
 .form-input {
+  width: 100%;
+  height: 40px;
   padding-top: 11px;
   padding-bottom: 11px;
-  padding-left: 42px;
+  padding-left: 38px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   transition: outline-color var(--timing);
@@ -720,9 +728,13 @@ img {
   margin-bottom: 16px;
 }
 
+.input-wrapp {
+  position: relative;
+}
 .form-icon {
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   left: 16px;
   fill: #000000;
   transition: fill var(--timing);
@@ -731,57 +743,6 @@ img {
 .form-input:focus + .form-icon,
 .form-input:hover + .form-icon {
   fill: #4d5ae5;
-}
-
-.policy-label {
-  position: relative;
-  display: flex;
-  align-items: center;
-
-  font-size: 14px;
-  line-height: 1.7;
-  color: #757575;
-}
-
-.policy-checkbox {
-  position: absolute;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-}
-
-.policy-box {
-  position: absolute;
-  left: 0;
-  display: block;
-  opacity: 1;
-}
-
-.policy-checkbox:checked ~ .policy-box {
-  opacity: 0;
-  transition: opacity var(--timing);
-}
-
-.policy-check {
-  position: absolute;
-  left: 0;
-  display: block;
-  margin-left: 13px;
-  margin-right: 7px;
-  opacity: 0;
-}
-
-.policy-checkbox:checked ~ .policy-check {
-  opacity: 1;
-  transition: opacity var(--timing);
-}
-
-.policy-link {
-  position: relative;
-  display: inline-flex;
-  color: #2196f3;
-  text-decoration: underline;
 }
 
 .form-button {
