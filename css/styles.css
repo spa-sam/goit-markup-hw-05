@@ -605,7 +605,7 @@ img {
   min-height: 584px;
   background-color: #fcfcfc;
   border-radius: 4px;
-  z-index: 1001;
+  /* z-index: 1001; */
 
   opacity: 1;
   transition: transform var(--timing), opacity var(--timing);
@@ -660,9 +660,6 @@ img {
 }
 
 .form-field {
-  /* position: relative;
-  display: flex; 
-  flex-direction: column;*/
   max-width: 360px;
   margin-top: 0;
   margin-bottom: 8px;
@@ -692,26 +689,31 @@ img {
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 38px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  transition: outline-color var(--timing);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: border-color var(--timing);
+  outline: none;
 }
 
-.form-input:focus,
-.form-input:hover {
-  outline-width: 1px;
-  outline-style: solid;
-  outline-color: #4d5ae5;
+.form-input:focus {
+  border-color: #4d5ae5;
 }
 
 .form-comment {
   padding-top: 8px;
+  padding-bottom: 8px;
   padding-left: 16px;
-  width: 360px;
+  padding-right: 16px;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   resize: none;
+  outline: none;
+  transition: border-color var(--timing);
+}
+.form-comment:focus {
+  border-color: #4d5ae5;
 }
 
 .form-comment::placeholder {
@@ -740,11 +742,18 @@ img {
   transition: fill var(--timing);
 }
 
-.form-input:focus + .form-icon,
-.form-input:hover + .form-icon {
+.form-input:focus + .form-icon {
   fill: #4d5ae5;
 }
 
+.policy-own-chekbox {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  cursor: pointer;
+}
 .form-button {
   margin-top: 0;
   margin-bottom: 0;
