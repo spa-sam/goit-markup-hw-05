@@ -759,6 +759,7 @@ img {
   cursor: pointer;
   fill: transparent;
   transition: background-color var(--timing), border var(--timing), fill var(--timing);
+}
 
 .policy-label {
   color: #8e8f99;
