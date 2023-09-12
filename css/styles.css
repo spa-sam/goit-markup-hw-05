@@ -780,6 +780,10 @@ img {
   fill: #f4f4fd;
 }
 
+.real-policy-checkbox:focus + .policy-label > .policy-own-chekbox {
+  outline: 2px solid #4d5ae5;
+}
+
 .form-button {
   display: block;
   margin-right: auto;
