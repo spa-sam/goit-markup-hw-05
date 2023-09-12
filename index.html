@@ -670,7 +670,7 @@
           </div>
           <div class="form-policy-checkbox">
             <input
-              class="policy-checkbox"
+              class="real-policy-checkbox visually-hidden"
               type="checkbox"
               name="policy"
               id="chek-policy"
@@ -679,16 +679,14 @@
               required
             />
             <label class="policy-label" for="chek-policy">
-              <span class="policy-own-chekbox"></span>
+              <span class="policy-own-chekbox">
+                <svg class="policy-check" width="10" height="8" aria-label="policy check mark">
+                  <use href="./images/icons/sprite.svg#icon-checked"></use>
+                </svg>
+              </span>
               I accept the terms and conditions of the
               <a href="#" class="policy-link link">Privacy Policy</a>
             </label>
-            <svg class="policy-box" width="16" height="15">
-              <use href="./images/icons/sprite.svg#icon-check-box"></use>
-            </svg>
-            <svg class="policy-check" width="16" height="15">
-              <use href="./images/icons/sprite.svg#icon-check"></use>
-            </svg>
           </div>
           <button class="form-button" type="submit">Send</button>
         </form>
